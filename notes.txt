@@ -1,0 +1,93 @@
+public class YourName { 
+public static void main(String[] args) { 
+System.out.println("Thai Vo"); }} 
+
+Conditionals and Control Flow 
+Data Type 
+int is short for integer, which are all positive and negative numbers, including zero. 
+This number could represent the number of visits a website has received or the number of programming languages you know. 
+The int data type only allows values between -2,147,483,648 and 2,147,483,647. 
+
+The next data type we will use is the boolean. A boolean is a data type that can only be either true or false. 
+
+The char data type is used to represent single characters. That includes the keys on a keyboard that are used to produce text. 
+char is short for character and can represent a single character. All char values must be enclosed in single quotes, like this: 'G'. 
+A variable stores a value. In Java, all variables must have a specified data type. 
+
+A comment is text you want Java to ignore. Comments allow you to describe code or keep notes. 
+By using comments in the Java code, you may help yourself and even other programmers understand the purpose of code that a comment refers to. 
+In Java, there are two styles of comments: single line comments and multi-line comments. ( // or /**/) 
+
+modulo operator - represented in Java by the %symbol - returns the remainder of dividing two numbers. 
+For example, 15 % 6 will return the value of 3, because that is the remainder left over after dividing 15 by 6. 
+
+Relational operators will always return a boolean value of true orfalse. Here are a few relational operators: 
+1.< : less than. 
+2.<=: less than or equal to. 
+3.>: greater than. 
+4.>=: greater than or equal to. 
+
+The equality operators are: 
+1.==: equal to. 
+2.!=: not equal to.
+
+Boolean 
+
+The and operator is represented in Java by &&. It returns a boolean value oftrue only when the expressions on both sides of&& are true. 
+The or operator is represented in Java by ||. It returns a Boolean value oftrue when at least one expression on either side of ||is true.
+The not operator is represented in Java by !. It will return the opposite of the expression immediately after it. 
+It will return false if the expression is true, and true if the expression is false. 
+However, just like numerical operators, Boolean operators follow rules that specify the order in which they are evaluated. 
+This order is called Boolean operatorprecedence. The precedence of each Boolean operator is as follows: 
+1.! is evaluated first 
+2.&& is evaluated second 
+3.|| is evaluated third 
+
+If Statement 
+
+In Java, the keyword if is the first part of a conditional expression. 
+It is followed by a Boolean expression and then a block of code. 
+If the Boolean expression evaluates to true, the block of code that follows will be run. 
+Sometimes we execute one block of code when the Boolean expression after the if keyword istrue.
+Other times we may want to execute a different block of code when the Boolean expression isfalse. 
+We could write a second ifstatement with a Boolean expression that is opposite the first, 
+but Java provides a shortcut called the if/else conditional. 
+The if/else conditional will run the block of code associated with the ifstatement if its Boolean expression evaluates to true. 
+Otherwise, if the Boolean expression evaluates to false, it will run the block of code after the else keyword. 
+
+public class IfElse { 
+  public static void main(String[] args) { 
+      int yes = 1; 
+      int no = 2; 
+System.out.println("Is Jennie a Bitch?"); 
+  if (2 <= 1) { 
+System.out.println("Surely she is!!!"); 
+} else { 
+System.out.println("Nah, she's a Queen and she mother fucking Awesome!"); 
+   }
+  }
+}
+
+we can use theif/else if/else statement in Java. 
+If the Boolean expression after the if statement evaluates totrue, it will run the code block that directly follows. 
+Otherwise, if the Boolean expression after the else ifstatement evaluates to true, the code block that directly follow will run. 
+Finally, if all previous Boolean expressions evaluate to false, the code within the elseblock will run. 
+
+Conditional Statement 
+
+if/else statements can become lengthy even when you simply want to return a value depending on a Boolean expression. 
+Fortunately, Java provides a shortcut that allows you to write if/else statements in a single line of code. 
+It is called the ternary conditional statement. 
+
+The term ternary comes from a Latin word that means "composed of three parts". 
+These three parts are: 
+1.A Boolean expression 
+2.A single statement that gets executed if the Boolean expression is true 
+3.A single statement that gets executed if the Boolean expression is false 
+
+public class Ternary { 
+public static void main(String[] args) { 
+int fuelLevel = 3; 
+char canDrive = (fuelLevel > 10) ? 'Y' : 'N'; System.out.println(canDrive); }} 
+
+The conditional statements that we have covered so far require Boolean expressions to determine which code block to run. Java also provides a way to execute code blocks based on whether a block is equal to a specific value. For those specific cases, we can use the switch statement, which helps keep code organized and less wordy. Control flow allows Java programs to execute code blocks depending on Boolean expressions. What did we learn about control flow so far? Boolean Operators: &&, ||, and ! are used to build Boolean expressions and have a defined order of operations Statements: if, if/else, and if/else if/elsestatements are used to conditionally execute blocks of code Ternary Conditional: a shortened version of anif/else statement that returns a value based on the value of a Boolean expression Switch: allows us to check equality of a variable or expression with a value that does not need to be a Boolean public class Switch { public static void main(String[] args) { char penaltyKick = 'C'; switch (penaltyKick) { case 'L': System.out.println("Messi shoots to the left and scores!"); break;  case 'R': System.out.println("Messi shoots to the right and misses the goal!"); break; case 'C': System.out.println("Messi shoots down the center, but the keeper blocks it!"); break; default: System.out.println("Messi is in position..."); break; }}}Review Boolean Operators: &&, ||, and ! are used to build Boolean expressions and have a defined order of operations Statements: if, if/else, and if/else if/elsestatements are used to conditionally execute blocks of code Ternary Conditional: a shortened version of anif/else statement that returns a value based on the value of a Boolean expression Switch: allows us to check equality of a variable or expression with a value that does not need to be a Boolean 
